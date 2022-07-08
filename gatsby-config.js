@@ -1,21 +1,41 @@
 module.exports = {
   siteMetadata: {
-    title: `duneshenko`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Roman Duneshenko`,
+    siteUrl: `https://duneshenko.com`
   },
-  plugins: ["gatsby-plugin-postcss", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "images",
-      "path": "./src/images/"
+  plugins: [
+    "gatsby-plugin-postcss",
+    "gatsby-plugin-image",
+    "gatsby-plugin-react-helmet",
+    {
+      resolve: "gatsby-plugin-sharp",
+      options: {
+        defaults: {
+          placeholder: "none"
+        }
+      }
     },
-    __key: "images"
-  }, {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "pages",
-      "path": "./src/pages/"
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-react-svg",
+    {
+      resolve: "gatsby-transformer-yaml",
+      options: {
+        typeName: ({ node }) => node.name
+      }
     },
-    __key: "pages"
-  }]
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        "name": "assets",
+        "path": "./src/assets/"
+      }
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        "name": "data",
+        "path": "./data/"
+      }
+    }
+  ]
 };
