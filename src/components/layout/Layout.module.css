@@ -1,0 +1,42 @@
+.root {
+  font-family: "Victor Mono", monospace;
+  font-size: 4.45vw;
+  font-weight: 700;
+
+  color: white;
+  background-color: black;
+}
+
+.root a {
+  color: inherit;
+}
+
+.root a:hover {
+  color: #afafaf;
+}
+
+.root *::selection {
+  background-color: #B8B8B8;
+}
+
+.container {
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 1.4em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 1450px) {
+  .root {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 1450px;
+
+    padding: 0;
+  }
+}

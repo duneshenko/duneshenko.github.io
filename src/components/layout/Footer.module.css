@@ -1,0 +1,47 @@
+.footer {
+  padding: 3em 0 1em;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  margin-bottom: 1.7em;
+}
+
+.item-header {
+  margin-bottom: 0.3em;
+}
+
+.item-links {
+
+}
+
+.item-link {
+
+}
+
+.item-link:not(:last-child) {
+  margin-right: 1.2em;
+}
+
+.spacer {
+  flex: 1;
+}
+
+@media (min-width: 1450px) {
+  .footer {
+    font-size: 18px;
+    padding: 2.5em 0;
+
+    flex-direction: row;
+  }
+
+  .item {
+    margin: 0;
+  }
+
+  .item:not(:last-child) {
+    margin-right: 2.6em;
+  }
+}
