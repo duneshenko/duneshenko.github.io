@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 
-@media (min-width: 1450px) {
+@media (min-width: 1400px) {
   .about {
     flex-direction: row;
   }

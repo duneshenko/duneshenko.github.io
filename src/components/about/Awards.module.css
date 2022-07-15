@@ -47,7 +47,7 @@
   line-height: 1.8em;
 }
 
-@media (min-width: 1450px) {
+@media (min-width: 1400px) {
   .column {
     margin-left: 3em;
     margin-bottom: -0.5em;

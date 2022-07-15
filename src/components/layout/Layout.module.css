@@ -29,13 +29,13 @@
   justify-content: space-between;
 }
 
-@media (min-width: 1450px) {
+@media (min-width: 1400px) {
   .root {
     font-size: 14px;
   }
 
   .container {
-    width: 1450px;
+    width: 1400px;
 
     padding: 0;
   }
