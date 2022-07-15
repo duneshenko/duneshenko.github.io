@@ -1,0 +1,31 @@
+.title {
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+}
+
+.link {
+  display: block;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.video {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.link:hover .video {
+  opacity: 1;
+}
+
+.video video {
+  width: 100%;
+}
