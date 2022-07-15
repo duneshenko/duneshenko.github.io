@@ -5,6 +5,8 @@
 
   color: white;
   background-color: black;
+
+  overflow-x: hidden;
 }
 
 .root a {

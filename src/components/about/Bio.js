@@ -6,7 +6,11 @@ import * as styles from "./Bio.module.css"
 const Bio = () => (
   <div className={styles.column}>
     <div className={styles.photoWrapper}>
-      <StaticImage src="../../assets/images/photo.jpg" alt="Roman Duneshenko" />
+      <StaticImage
+        src="../../assets/images/photo.jpg"
+        alt="Roman Duneshenko"
+        layout="fullWidth"
+      />
     </div>
     <div className={styles.bio}>
       As a director, Roman enjoys working
