@@ -3,15 +3,18 @@ import { Link } from "gatsby"
 import classNames from "classnames"
 
 import { useFirstMount } from "../../contexts/FirstMountContext"
+import { useFooterHighlighter } from "./Footer"
 import Logo from "../../assets/images/logo.svg"
 import * as styles from "./Header.module.css"
 
 const Header = () => {
   const isFirstMount = useFirstMount("Header")
+  const { highlightFooter } = useFooterHighlighter()
 
   const showContacts = useCallback(() => {
     document.documentElement.scrollTo({top: document.documentElement.scrollHeight, behavior: "smooth"})
-  }, [])
+    highlightFooter()
+  }, [highlightFooter])
 
   return (
     <header className={styles.header}>

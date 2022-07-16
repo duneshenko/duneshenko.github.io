@@ -21,10 +21,8 @@
   background-color: #B8B8B8;
 }
 
-.container {
+.layout {
   min-height: 100vh;
-  margin: 0 auto;
-  padding: 0 1.4em;
 
   display: flex;
   flex-direction: column;
@@ -36,9 +34,7 @@
     font-size: 14px;
   }
 
-  .container {
-    width: 1400px;
-
-    padding: 0;
+  .layout {
+    align-items: center;
   }
 }

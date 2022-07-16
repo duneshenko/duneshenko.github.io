@@ -1,5 +1,31 @@
 .footer {
-  padding: 3em 0 1em;
+  align-self: stretch;
+
+  display: flex;
+  justify-content: center;
+}
+
+.footer.highlighted {
+  animation: highlight 1s ease forwards 0.2s;
+}
+
+@keyframes highlight {
+  0% {
+    background: black;
+  }
+
+  50% {
+    background: #777777;
+  }
+
+  100% {
+    background: black;
+  }
+}
+
+.footer-content {
+  width: 100%;
+  padding: 3em 1.4em 2em;
 
   display: flex;
   flex-direction: column;
@@ -32,6 +58,10 @@
 @media (min-width: 1400px) {
   .footer {
     font-size: 18px;
+  }
+
+  .footer-content {
+    width: 1400px;
     padding: 2.5em 0;
 
     flex-direction: row;
