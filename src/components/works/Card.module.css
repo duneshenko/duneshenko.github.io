@@ -22,10 +22,20 @@
   transition: opacity 0.3s;
 }
 
-.link:hover .video {
+.video.autoplay {
   opacity: 1;
 }
 
 .video video {
   width: 100%;
+}
+
+@media (min-width: 1400px) {
+  .video.autoplay {
+    opacity: 0;
+  }
+
+  .link:hover .video {
+    opacity: 1;
+  }
 }
