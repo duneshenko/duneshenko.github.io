@@ -63,12 +63,13 @@
 
   .bio {
     font-size: 1.57em;
-    width: 65%;
+    line-height: 1.4em;
+    width: 66%;
   }
 
   .photo-wrapper {
     width: 26em;
-    right: 5em;
+    right: 4em;
     bottom: 0.4em;
   }
 }

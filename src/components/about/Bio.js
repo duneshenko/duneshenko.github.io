@@ -15,6 +15,7 @@ const Bio = () => {
           src="../../assets/images/photo.webp"
           alt="Roman Duneshenko"
           layout="fullWidth"
+          aspectRatio={0.7}
         />
       </div>
       <div className={classNames(styles.bio, {"appear-left": isFirstMount})}>
