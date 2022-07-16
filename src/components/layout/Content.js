@@ -1,12 +1,15 @@
 import React from "react"
 
+import Container from "./Container"
 import * as styles from "./Content.module.css"
 
 const Content = ({ children }) => {
   return (
-    <main className={styles.content}>
-      {children}
-    </main>
+    <Container>
+      <main className={styles.content}>
+        {children}
+      </main>
+    </Container>
   )
 }
 

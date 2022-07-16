@@ -1,5 +1,5 @@
 .header {
-  padding: 0.7em 1.4em 0;
+  padding-top: 0.7em;
 
   display: flex;
   flex-direction: column;
@@ -51,10 +51,8 @@
   opacity: 0.8;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 992px) {
   .header {
-    width: 1400px;
-
     padding: 2.3em 0;
 
     flex-direction: row-reverse;
@@ -79,6 +77,6 @@
   }
 
   .logo-wrapper {
-    width: 327px;
+    width: 23em;
   }
 }

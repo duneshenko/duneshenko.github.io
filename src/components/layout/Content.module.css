@@ -1,11 +1,9 @@
 .content {
-  padding: 2.6em 1.4em;
+  padding: 2.6em 0;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 992px) {
   .content {
-    width: 1400px;
-
     padding: 5em 0;
   }
 }

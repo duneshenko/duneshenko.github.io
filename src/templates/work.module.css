@@ -46,7 +46,7 @@
   width: 1.3em;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 992px) {
   .header {
     margin: 0 0 1.5em 0;
   }

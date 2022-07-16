@@ -30,7 +30,7 @@
   width: 100%;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 992px) {
   .video.autoplay {
     opacity: 0;
   }

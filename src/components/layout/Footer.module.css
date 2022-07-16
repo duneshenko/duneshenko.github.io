@@ -2,7 +2,6 @@
   align-self: stretch;
 
   display: flex;
-  justify-content: center;
 }
 
 .footer.highlighted {
@@ -25,7 +24,7 @@
 
 .footer-content {
   width: 100%;
-  padding: 3em 1.4em 2em;
+  padding: 3em 0 2em;
 
   display: flex;
   flex-direction: column;
@@ -55,13 +54,13 @@
   flex: 1;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 992px) {
   .footer {
-    font-size: 18px;
+    justify-content: center;
   }
 
   .footer-content {
-    width: 1400px;
+    font-size: 1.28em;
     padding: 2.5em 0;
 
     flex-direction: row;

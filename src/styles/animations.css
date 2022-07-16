@@ -28,7 +28,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 992px) {
   .appear-left {
     animation: appear-left 0.7s ease forwards;
   }

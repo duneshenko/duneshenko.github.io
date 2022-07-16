@@ -54,7 +54,7 @@
   bottom: 11.5em;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 992px) {
   .column {
     width: 50%;
     height: 40em;
