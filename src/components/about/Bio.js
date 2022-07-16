@@ -12,7 +12,7 @@ const Bio = () => {
     <div className={styles.column}>
       <div className={classNames(styles.photoWrapper, {"appear-bottom": isFirstMount})}>
         <StaticImage
-          src="../../assets/images/photo.jpg"
+          src="../../assets/images/photo.webp"
           alt="Roman Duneshenko"
           layout="fullWidth"
         />
