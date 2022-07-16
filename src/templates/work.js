@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import classNames from "classnames"
 
 import Arrow from "../assets/images/arrow.svg"
+import Seo from "../components/Seo"
 import Layout from "../components/layout/Layout"
 import * as styles from "./work.module.css"
 
@@ -12,6 +13,7 @@ const WorkPage = ({ data, pageContext }) => {
 
   return (
     <Layout>
+      <Seo pageTitle={work.name} />
       <h3 className={styles.header}>
         {work.name} '{work.type}'
       </h3>
