@@ -1,17 +1,21 @@
 import React, { useCallback } from "react"
 import { Link } from "gatsby"
+import classNames from "classnames"
 
+import { useFirstMount } from "../../contexts/FirstMountContext"
 import Logo from "../../assets/images/logo.svg"
 import * as styles from "./Header.module.css"
 
 const Header = () => {
+  const isFirstMount = useFirstMount("Header")
+
   const showContacts = useCallback(() => {
     document.documentElement.scrollTo({top: document.documentElement.scrollHeight, behavior: "smooth"})
   }, [])
 
   return (
     <header className={styles.header}>
-      <nav className={styles.navigation}>
+      <nav className={classNames(styles.navigation, {"appear-right": isFirstMount})}>
         <Link to="/" className={styles.link} activeClassName={styles.active}>
           Work
         </Link>
@@ -23,7 +27,7 @@ const Header = () => {
           Contacts
         </a>
       </nav>
-      <Link to="/" className={styles.logoWrapper}>
+      <Link to="/" className={classNames(styles.logoWrapper, {"appear-left": isFirstMount})}>
         <Logo />
       </Link>
     </header>

@@ -1,10 +1,14 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import classNames from "classnames"
 
+import { useFirstMount } from "../../contexts/FirstMountContext"
 import Card from "./Card"
 import * as styles from "./Works.module.css"
 
 const Works = () => {
+  const isFirstMount = useFirstMount("Works")
+
   const data = useStaticQuery(graphql`
     query {
       allWork {
@@ -38,7 +42,7 @@ const Works = () => {
   }
 
   return (
-    <div className={styles.cards}>
+    <div className={classNames(styles.cards, {"appear-bottom": isFirstMount})}>
       <div className={styles.card2}><Card work={works['in-the-dark']} /></div>
       <div className={styles.card1}><Card work={works['feel']} /></div>
       <div className={styles.card3}><Card work={works['game']} /></div>

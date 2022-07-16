@@ -1,0 +1,43 @@
+@keyframes appear-left {
+  0% {
+    transform: translateX(-30%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes appear-right {
+  0% {
+    transform: translateX(30%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes appear-bottom {
+  0% {
+    transform: translateY(5em);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 1400px) {
+  .appear-left {
+    animation: appear-left 0.7s ease forwards;
+  }
+
+  .appear-right {
+    animation: appear-right 0.7s ease forwards;
+  }
+
+  .appear-bottom {
+    animation: appear-bottom 0.7s ease forwards;
+  }
+}
