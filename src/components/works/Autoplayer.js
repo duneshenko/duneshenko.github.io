@@ -57,7 +57,7 @@ export const useAutoplay = (element) => {
     return () => {
       unwatchElement(element)
     }
-  }, [element])
+  }, [element, watchElement, unwatchElement])
 
   return element === currentElement
 }
