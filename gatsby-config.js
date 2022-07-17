@@ -8,6 +8,12 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'src/assets/images/icon.png',
+      },
+    },
+    {
       resolve: "gatsby-plugin-sharp",
       options: {
         defaults: {
