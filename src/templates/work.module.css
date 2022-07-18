@@ -1,3 +1,7 @@
+.content {
+  padding: 2.6em 0;
+}
+
 .header {
   font-size: inherit;
   text-transform: uppercase;
@@ -47,6 +51,10 @@
 }
 
 @media (min-width: 992px) {
+  .content {
+    padding: 1em 0;
+  }
+
   .header {
     margin: 0 0 1.5em 0;
   }

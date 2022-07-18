@@ -13,30 +13,32 @@ const WorkPage = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <Seo pageTitle={work.name} />
-      <h3 className={styles.header}>
-        {work.name} '{work.type}'
-      </h3>
-      <div className={styles.work}>
-        <div className={styles.videoContainer}>
-          <iframe
-            src={work.embed}
-            className={styles.video}
-            title={work.name}
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            frameBorder="0"
-            webkitallowfullscreen="true"
-            mozallowfullscreen="true"
-            allowFullScreen
-          ></iframe>
+      <main className={styles.content}>
+        <Seo pageTitle={work.name} />
+        <h3 className={styles.header}>
+          {work.name} '{work.type}'
+        </h3>
+        <div className={styles.work}>
+          <div className={styles.videoContainer}>
+            <iframe
+              src={work.embed}
+              className={styles.video}
+              title={work.name}
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              frameBorder="0"
+              webkitallowfullscreen="true"
+              mozallowfullscreen="true"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <Link to={`/${previousWork.slug}/`} className={classNames(styles.link, styles.prev)}>
+            <Arrow className={styles.arrow} />
+          </Link>
+          <Link to={`/${nextWork.slug}/`} className={classNames(styles.link, styles.next)}>
+            <Arrow className={styles.arrow} />
+          </Link>
         </div>
-        <Link to={`/${previousWork.slug}/`} className={classNames(styles.link, styles.prev)}>
-          <Arrow className={styles.arrow} />
-        </Link>
-        <Link to={`/${nextWork.slug}/`} className={classNames(styles.link, styles.next)}>
-          <Arrow className={styles.arrow} />
-        </Link>
-      </div>
+      </main>
     </Layout>
   )
 }

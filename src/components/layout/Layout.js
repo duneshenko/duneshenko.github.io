@@ -1,7 +1,7 @@
 import React from "react"
 
 import Header from "./Header"
-import Content from "./Content"
+import Container from "./Container"
 import Footer, { FooterHighlighter } from "./Footer"
 import * as styles from "./Layout.module.css"
 
@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
       <div className={styles.layout}>
         <FooterHighlighter>
           <Header/>
-          <Content>{children}</Content>
+          <Container>{children}</Container>
           <Footer/>
         </FooterHighlighter>
       </div>

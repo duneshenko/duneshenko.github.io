@@ -4,9 +4,9 @@ import * as styles from "./Container.module.css"
 
 const Container = ({ children }) => {
   return (
-    <main className={styles.container}>
+    <div className={styles.container}>
       {children}
-    </main>
+    </div>
   )
 }
 

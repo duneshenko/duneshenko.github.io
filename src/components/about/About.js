@@ -6,10 +6,10 @@ import * as styles from "./About.module.css"
 
 const About = () => {
   return (
-    <div className={styles.about}>
+    <main className={styles.about}>
       <Bio />
       <Awards />
-    </div>
+    </main>
   )
 }
 

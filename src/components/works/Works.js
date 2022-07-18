@@ -44,14 +44,14 @@ const Works = () => {
 
   return (
     <Autoplayer>
-      <div className={classNames(styles.cards, {"appear-bottom": isFirstMount})}>
+      <main className={classNames(styles.cards, {"appear-bottom": isFirstMount})}>
         <div className={styles.card2}><Card work={works["in-the-dark"]} /></div>
         <div className={styles.card1}><Card work={works["feel"]} /></div>
         <div className={styles.card3}><Card work={works["game"]} /></div>
         <div className={styles.card4}><Card work={works["yandex-lavka"]} /></div>
         <div className={styles.card5}><Card work={works["antonio-banderas-perfume"]} /></div>
         <div className={styles.card6}><Card work={works["youth"]} /></div>
-      </div>
+      </main>
     </Autoplayer>
   )
 }
