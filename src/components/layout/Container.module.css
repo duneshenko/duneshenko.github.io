@@ -6,12 +6,6 @@
   .container {
     width: 100em;
 
-    padding: 0 2.5em;
-  }
-}
-
-@media (min-width: 1400px) {
-  .container {
     padding: 0;
   }
 }

@@ -31,13 +31,7 @@
 
 @media (min-width: 992px) {
   .root {
-    font-size: 1vw;
-  }
-}
-
-@media (min-width: 1400px) {
-  .root {
-    font-size: 14px;
+    font-size: min(0.838vw, 14px);
   }
 
   .layout {
