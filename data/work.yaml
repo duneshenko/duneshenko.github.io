@@ -64,6 +64,17 @@
       type: "video/mp4"
   embed: "https://player.vimeo.com/video/297295478"
 
+- slug: "come-back"
+  name: "Come Back"
+  type: "short film"
+  image: "./work/images/come-back.jpg"
+  video:
+    - src: "./work/videos/come-back.webm"
+      type: "video/webm"
+    - src: "./work/videos/come-back.mp4"
+      type: "video/mp4"
+  embed: "https://player.vimeo.com/video/758125757"
+
 #- slug: "drive-me"
 #  name: "Drive Me"
 #  type: "commercial"

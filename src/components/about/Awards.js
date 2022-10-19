@@ -48,6 +48,21 @@ const Awards = () => {
         <div className={styles.festivalList}>
           <div className={styles.festivalListItem}>Unknown film festival</div>
         </div>
+        <div className={styles.year}>2022</div>
+        <div className={styles.nomination}>Best Cinematography</div>
+        <div className={styles.festivalList}>
+          <div className={styles.festivalListItem}>Sea of Art</div>
+          <div className={styles.festivalListItem}>1st Monthly Film Festival</div>
+          <div className={styles.festivalListItem}>Heart of European International Monthly Film Festival</div>
+          <div className={styles.festivalListItem}>Fox Film Festival</div>
+        </div>
+        <div className={styles.nomination}>Official selection</div>
+        <div className={styles.festivalList}>
+          <div className={styles.festivalListItem}>Festival of Darkness</div>
+          <div className={styles.festivalListItem}>8 & Halfilm Awards</div>
+          <div className={styles.festivalListItem}>Experimental Film Guanajuato</div>
+          <div className={styles.festivalListItem}>Metropolis Film Festival</div>
+        </div>
       </div>
     </div>
   )
